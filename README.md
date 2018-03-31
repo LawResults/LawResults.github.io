@@ -6,24 +6,28 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <script src="tabletop.js"></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1sbyMINQHPsJctjAtMW0lCfLrcpMqoGMOJj6AN-sNQrc/pubhtml';
-
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo(data, tabletop) {
-    alert('Successfully processed!')
-    console.log(data);
-  }
-
-  window.addEventListener('DOMContentLoaded', init)
-</script>
-
+<script type="text/javascript">
+-      window.onload = function() { init() };
+-    
++    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
++    <script type='text/javascript'>    
+       var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1Y5mGn_Gd05M6x1WN9l-1UchrBWQEJNmZoS7LDuFI8Jg/edit?usp=sharing';
+ 
+       function init() {
+         Tabletop.init( { key: publicSpreadsheetUrl,
+                          callback: showInfo,
+                          simpleSheet: true } )
+       }
+ 
+       function showInfo(data, tabletop) {
+-        alert("Successfully processed!")
++        alert('Successfully processed!')
+         console.log(data);
+       }
++
++      window.addEventListener('DOMContentLoaded', init)
+     </script>
+       
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
