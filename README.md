@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Law's Results
 
-You can use the [editor on GitHub](https://github.com/LawResults/LawResults.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Providing easily accesible results and analytics for Double Draw Results
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
