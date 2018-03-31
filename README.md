@@ -4,6 +4,15 @@ Providing easily accesible results and analytics for Double Draw Results
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+function init() {
+  Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1Y5mGn_Gd05M6x1WN9l-1UchrBWQEJNmZoS7LDuFI8Jg/edit?usp=sharing',
+                   callback: function(data, tabletop) { 
+                       console.log(data)
+                   },
+                   simpleSheet: true } )
+}
+window.addEventListener('DOMContentLoaded', init)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
